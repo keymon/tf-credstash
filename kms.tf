@@ -1,7 +1,3 @@
-# This data source is necessary to get the current aws account id to set in
-# the key policy
-data "aws_caller_identity" "current" {}
-
 data "aws_iam_policy_document" "key_policy" {
   statement {
     sid    = "Allow IAM permissions"

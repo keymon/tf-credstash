@@ -1,3 +1,13 @@
+variable "region" {
+  description = "AWS region to use"
+  default     = "eu-west-1"
+}
+
+variable "store_name" {
+  description = "Name to use for the resources and policies"
+  default     = ""
+}
+
 variable "key_alias" {
   description = "Alias to give to your kms key"
   default     = "alias/credstash"
